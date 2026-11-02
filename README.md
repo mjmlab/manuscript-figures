@@ -76,8 +76,8 @@ outside any synced folder, and uses it for all your manuscripts.
 Clone the repository once, then set up your first manuscript:
 
 ```sh
-git clone https://github.com/mjmlab/manuscript-figures.git ~/manuscript-figures
-~/manuscript-figures/new_manuscript.sh "/path/to/your/manuscript"
+git clone https://github.com/mjmlab/manuscript-figures.git ~/Code/manuscript-figures
+~/Code/manuscript-figures/new_manuscript.sh "/path/to/your/manuscript"
 ```
 
 `new_manuscript.sh` creates the manuscript folder (if it doesn't exist yet) and a
@@ -93,25 +93,25 @@ Run the script from the manuscript's `Figures` folder with `--dir .`:
 
 ```sh
 cd "/path/to/your/manuscript/Figures"
-~/manuscript-figures/export_figures.sh --dir .
+~/Code/manuscript-figures/export_figures.sh --dir .
 ```
 
 Outputs are written to that manuscript's `Figures` folder, so each paper keeps its
-own. Leaving out `--dir .` would export the templates in `~/manuscript-figures`
+own. Leaving out `--dir .` would export the templates in `~/Code/manuscript-figures`
 instead.
 
 Optionally, add this line to `~/.zshrc` so `export_figures` works in any `Figures`
 folder:
 
 ```sh
-alias export_figures='~/manuscript-figures/export_figures.sh --dir .'
+alias export_figures='~/Code/manuscript-figures/export_figures.sh --dir .'
 ```
 
 Then, for example, `export_figures --pdf` exports PDFs only.
 
 ### Update
 
-Run `git pull` in `~/manuscript-figures`. Every manuscript gets the updated script
+Run `git pull` in `~/Code/manuscript-figures`. Every manuscript gets the updated script
 at once. Updated templates are copied into new manuscripts by `new_manuscript.sh`;
 existing manuscripts keep the figures they have.
 
