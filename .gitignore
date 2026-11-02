@@ -1,0 +1,14 @@
+# Claude Code
+.claude/
+
+# Export script outputs
+/JPG/
+/TIFF/
+/PNG/
+/PDF/
+
+# Illustrator temp files
+~*
+
+# macOS
+.DS_Store
